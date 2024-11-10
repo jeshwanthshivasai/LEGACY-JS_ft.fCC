@@ -44,3 +44,20 @@ function countOnline(allUsers) {
 }
 
 console.log(countOnline(users));
+
+/*
+Here’s how to fix the function:
+
+--> Initialize a counter before the loop to keep track of the number of users who are online.
+--> Inside the loop, check if the online property of each user is true.
+--> If it is, increment the counter.
+--> Finally, return the counter after the loop finishes.
+
+Explanation:
+
+--> let onlineCount = 0;: Initializes the counter to 0.
+--> for (let user in allUsers): Loops over each user in allUsers.
+--> if (allUsers[user].online === true): Checks if the online status is true.
+--> onlineCount++: Increments the counter if the user is online.
+--> return onlineCount;: Returns the total count after the loop.
+*/
