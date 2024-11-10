@@ -37,6 +37,12 @@ function isEveryoneHere(userObj) {
   if(userObj.hasOwnProperty('Alan') && userObj.hasOwnProperty('Jeff') && userObj.hasOwnProperty('Sarah') && userObj.hasOwnProperty('Ryan')) {
     return true;
   } return false;
+
+  //or 
+
+  return ["Alan", "Jeff", "Sarah", "Ryan"].every(name =>
+    userObj.hasOwnProperty(name)
+  );
   // Only change code above this line
 }
 
